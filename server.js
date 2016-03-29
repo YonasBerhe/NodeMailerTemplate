@@ -39,15 +39,15 @@ app.post('/data', function(req, res) {
   var transporter = nodemailer.createTransport('SMTP', {
     service: 'gmail',
     auth: {
-      user: 'yonas.berhe007@gmail.com',
-      pass: 'EqA9q83*i'
+      user: 'youremailandpass',
+      pass: 'password'
     }
   });
 
   // setup e-mail data with unicode symbols
   var mailOptions = {
-    from: 'yonas.berhe007@gmail.com', // sender address
-    to: 'robel.ghebrekiros@gmail.com', // list of receivers
+    from: 'youremail@gmail.com', // sender address
+    to: 'anotheremail@gmail.com', // list of receivers
     subject: 'Hello', // Subject line
     text: 'Hello world ', // plaintext body
     html: data.firstName + " " + data.lastName
